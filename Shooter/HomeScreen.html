@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Screen</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #homeButtons {
+      text-align: center;
+    }
+
+    #homeButtons button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #homeButtons button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+    <h1>Blacky Shooter</h1>
+  <div id="homeButtons">
+    <button onclick="startGame('easy.html')">Easy</button>
+    <button onclick="startGame('medium.html')">Medium</button>
+    <button onclick="startGame('hard.html')">Hard</button>
+  </div>
+
+  <script>
+    function startGame(difficulty) {
+      window.location.href = difficulty;
+    }
+  </script>
+</body>
+
+</html>
